@@ -1,0 +1,27 @@
+{
+  "name": "team-builder",
+  "version": "1.0.0",
+  "description": "Create a webpage with detailing your team's info.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchestnut85/team-builder.git"
+  },
+  "keywords": [
+    "team",
+    "builder",
+    "generate"
+  ],
+  "author": "Tom Chestnut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tchestnut85/team-builder/issues"
+  },
+  "homepage": "https://github.com/tchestnut85/team-builder#readme"
+}
