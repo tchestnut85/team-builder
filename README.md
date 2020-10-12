@@ -17,7 +17,7 @@
   ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Languages and Tech Used](#languages and tech used)
+  - [Languages](#languages)
   - [Questions](#questions)
   - [Links](#links)
   - [License](#license) 
@@ -38,7 +38,7 @@
   * Open the index.html in your web browser to view the generated webpage.
   * If moving the index.html and the style.css files to another directory, make sure to move both the index.html and /assets directory because the CSS file in there is needed for the index.html file.
 
-  ## Languages and Tech Used
+  ## Languages
   - JavaScript
   - Node.js
   - [Inquirer](https://www.npmjs.com/package/inquirer)
