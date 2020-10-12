@@ -3,8 +3,7 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-// const generateHtml = require('./utils/generateHtml');
-const generateHtml = require('./utils/generateHtml-copy');
+const generateHtml = require('./utils/generateHtml');
 
 // Array to hold all team members and feed into HTML generator
 const employees = [];
@@ -30,7 +29,7 @@ const questions = {
         {
             type: 'number',
             name: 'id',
-            message: "What is the employee's ID number? (Must be a 4-digit number) \n",
+            message: "What is the employee's ID number? \n",
             validate: idInput => {
                 if (idInput) {
                     return true;
@@ -84,7 +83,7 @@ const questions = {
         {
             type: 'number',
             name: 'id',
-            message: "What is the employee's ID number? (Must be a 4-digit number) \n",
+            message: "What is the employee's ID number? \n",
             validate: idInput => {
                 if (idInput) {
                     return true;
@@ -140,7 +139,7 @@ const questions = {
         {
             type: 'number',
             name: 'id',
-            message: "What is the employee's ID number? (Must be a 4-digit number) \n",
+            message: "What is the employee's ID number? \n",
             validate: idInput => {
                 if (idInput) {
                     return true;
