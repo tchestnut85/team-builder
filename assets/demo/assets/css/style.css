@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+header {
+    background-color: #26c6da;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.icons {
+    padding-right: 10px;
+}
