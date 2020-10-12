@@ -43,7 +43,7 @@
   - Node.js
   - [Inquirer](https://www.npmjs.com/package/inquirer)
   - [Jest](https://jestjs.io/docs/en/getting-started)
-  - [Bulma](https://bulma.io/)
+  - [Materialize](https://https://materializecss.com/)
   - [Font Awesome](https://fontawesome.com/start)
   
   ## Questions
