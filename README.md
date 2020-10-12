@@ -23,11 +23,12 @@
   - Make sure Node.js is installed on your computer. 
   - Clone or download the repository from GitHub. 
   - You may need to install the required modules by running `npm install` in the terminal.
-  - In the terminal, navigate to Team Builder's directory and run `node index` to invoke the app.
+  
 
   ## Usage
   This app can be used to quickly create a team profile webpage for easy access to your team's important info, email and GitHub profiles. After completing the series of questions, you will have a new HTML file that you can open in your web browser.
 
+  * In the terminal, navigate to Team Builder's directory and run `node index` to invoke the app.
   * You will be prompted with a series of questions about the manager and additional employees.
   * The question types used include text input, yes/no questions and a list. Type in text input answers, use the up/down arrows for the list then enter to select the answer, and y/n then enter for the yes/no questions.
   * Once all the questions have been answered, your answers will print to the terminal and a confirmation will also appear in the terminal that your HTML file has been generated. 
@@ -45,7 +46,7 @@
   ## Links
   - **[Click here](https://github.com/tchestnut85/team-builder/)** to visit this project's GitHub repo.
   - View a walkthrough video **[here](https://drive.google.com/file/d/17Rn8EwEGaD9NddtqaF6pLBL1d8c4isjb/view?usp=sharing)**.
-  - See a sample README generated from the app **[here]()**.
+  - See a sample HTML file generated from the app **[here](https://github.com/tchestnut85/team-builder/blob/main/assets/demo/index.html)**.
 
   ## License
   ![License](https://img.shields.io/badge/License%3A-MIT-green.svg)
