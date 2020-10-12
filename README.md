@@ -17,7 +17,7 @@
   ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Language and Tech Used](#languages and tech used)
+  - [Languages and Tech Used](#languages and tech used)
   - [Questions](#questions)
   - [Links](#links)
   - [License](#license) 
