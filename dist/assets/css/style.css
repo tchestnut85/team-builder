@@ -3,12 +3,35 @@
     font-weight: bolder;
 }
 
+
 header {
     background-color: #26c6da;
     padding-top: 1rem;
     padding-bottom: 3rem;
 }
 
+/* Controls employee names specifically */
+.empName {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em !important; 
+    padding-top: 1em;
+}
+/* Controls employee profession specifically */
+.empProf{
+    padding-bottom: 1em;
+}
+/* Controls the header as a whole, creates attributes */
+.headerAtt {
+    border-style: solid;
+    border-width: 5px;
+    border-color:#0b0d0e;
+}
+
+.empInfoBox{
+    background-color: #0b0d0e;
+}
+
 .icons {
     padding-right: 10px;
 }
+
