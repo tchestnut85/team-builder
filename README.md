@@ -5,7 +5,7 @@
   Team Builder is a team profile generator that you can quickly create an HTML file with cards for each of your employees which include their emails and GitHub profiles.
   After going through the series of questions for your employees, an HTML file will be generated in the dist folder as well as an assets folder containing a CSS file.
   
-  This app was created using object-oriented programmiing (OOP) and test-driven development (TDD). 
+  This app was created using object-oriented programming (OOP) and test-driven development (TDD). 
   Node.js was used with Inquirer.js to prompt questions in the command line and Jest was also used to for test-driven development.
 
   #### Team Builder questions and answers example:
