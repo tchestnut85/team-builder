@@ -10,8 +10,8 @@ const generateHtml = (employees) => {
                 <div class="col s4">
                     <div class="card cyan lighten-3">
                         <div class="card content teal lighten-5 center-align">
-                            <h2 class="card-title">${manager.getName()}</h2>
-                            <h5><span class="icon icons"><i class="fas fa-briefcase"></i></span>${manager.getRole()}</h5>
+                            <h2 class="padding-top card-title">${manager.getName()}</h2>
+                            <h5 class='padding-bot'><span class="icon icons"><i class="fas fa-briefcase"></i></span>${manager.getRole()}</h5>
                         </div>
                         <div class="card-content">
                             <div class="card-content">
@@ -34,8 +34,8 @@ const generateHtml = (employees) => {
                 <div class="col s4">
                     <div class="card cyan lighten-3">
                         <div class="card content teal lighten-5 center-align">
-                            <h2 class="card-title">${engineer.getName()}</h2>
-                            <h5><span class="icon icons"><i class="fas fa-laptop-code"></i></span>${engineer.getRole()}</h5>
+                            <h2 class="padding-top card-title">${engineer.getName()}</h2>
+                            <h5 class='padding-bot'><span class="icon icons"><i class="fas fa-laptop-code"></i></span>${engineer.getRole()}</h5>
                         </div>
                         <div class="card-content">
                             <div class="card-content">
@@ -58,8 +58,8 @@ const generateHtml = (employees) => {
                 <div class="col s4">
                     <div class="card cyan lighten-3">
                         <div class="card content teal lighten-5 center-align">
-                            <h2 class="card-title">${intern.getName()}</h2>
-                            <h5><span class="icon icons"><i class="fas fa-book"></i></span>${intern.getRole()}</h5>
+                            <h2 class="padding-top card-title">${intern.getName()}</h2>
+                            <h5 class='padding-bot'><span class="icon icons"><i class="fas fa-book"></i></span>${intern.getRole()}</h5>
                         </div>
                         <div class="card-content">
                             <div class="card-content">
