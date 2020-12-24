@@ -12,3 +12,11 @@ header {
 .icons {
     padding-right: 10px;
 }
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.padding-bot {
+    padding-bottom: 10px;
+}
