@@ -23,8 +23,8 @@ const addManager = async () => {
 	const { name, id, email, officeNumber, teamName } = await inquirer.prompt(
 		managerQuestions
 	);
-	const manager = new Manager(name, id, email, officeNumber);
-	employees.push(manager, teamName);
+	const manager = new Manager(name, id, email, officeNumber, teamName);
+	employees.push(manager);
 	addEmployee();
 };
 
@@ -49,15 +49,19 @@ const addIntern = async () => {
 };
 
 const makeProfile = () => {
-	fs.writeFile('./dist/index.html', generateHtml(employees), err => {
-		if (err) {
-			console.log('Error: ' + err);
-		} else {
-			console.log(
-				'\n =============== Team Profile created in: /dist/index.html! ==============='
-			);
+	fs.writeFile(
+		'./dist/index.html',
+		generateHtml(employees, employees.manager.teamName),
+		err => {
+			if (err) {
+				console.log('Error: ' + err);
+			} else {
+				console.log(
+					'\n =============== Team Profile created in: /dist/index.html! ==============='
+				);
+			}
 		}
-	});
+	);
 };
 
 const addEmployee = async () => {

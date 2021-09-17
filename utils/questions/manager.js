@@ -1,6 +1,18 @@
 const managerQuestions = [
 	{
 		type: 'input',
+		name: 'teamName',
+		message: 'What is the name of your team?',
+		validate: teamInput => {
+			if (teamInput) {
+				return true;
+			} else {
+				console.log('You must enter a team name.');
+			}
+		},
+	},
+	{
+		type: 'input',
 		name: 'name',
 		message: 'What is the name of the team manager? \n',
 		validate: nameInput => {
