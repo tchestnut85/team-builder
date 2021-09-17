@@ -2,7 +2,7 @@ const engineerQuestions = [
 	{
 		type: 'input',
 		name: 'name',
-		message: 'What is the name of the employee? \n',
+		message: 'What is the name of the engineer? \n',
 		validate: nameInput => {
 			if (nameInput) {
 				return true;
@@ -15,7 +15,7 @@ const engineerQuestions = [
 	{
 		type: 'number',
 		name: 'id',
-		message: "What is the employee's ID number? \n",
+		message: "What is the engineer's ID number? \n",
 		validate: idInput => {
 			if (idInput) {
 				return true;
@@ -28,7 +28,7 @@ const engineerQuestions = [
 	{
 		type: 'input',
 		name: 'email',
-		message: "What is the employee's email address? \n",
+		message: "What is the engineer's email address? \n",
 		validate: emailInput => {
 			if (emailInput.includes('@') && emailInput.includes('.com')) {
 				return true;
@@ -41,7 +41,7 @@ const engineerQuestions = [
 	{
 		type: 'input',
 		name: 'github',
-		message: "\n What is the Engineer's GitHub username?",
+		message: "\n What is the engineer's GitHub username?",
 		validate: function (value) {
 			if (value) {
 				return true;

@@ -2,11 +2,11 @@
 const employeeCards = [];
 
 // NEW FUNCTION
-const generateHtml = (employees) => {
-    console.log('employees:', employees);
+const generateHtml = employees => {
+	console.log('employees:', employees);
 
-    const createManager = (manager) => {
-        return `
+	const createManager = manager => {
+		return `
                 <div class="col s4">
                     <div class="card cyan lighten-3">
                         <div class="card content teal lighten-5 center-align">
@@ -21,16 +21,18 @@ const generateHtml = (employees) => {
                                 <span>Email:<a class='black-text' href='mailto:${manager.getEmail()}'> ${manager.getEmail()}</a></span>
                             </div>
                             <div class="card-content">
-                                <span>Office Number: ${manager.officeNumber}</span>
+                                <span>Office Number: ${
+									manager.officeNumber
+								}</span>
                             </div>
                         </div>
                     </div>
                 </div>
             `;
-    };
+	};
 
-    const createEngineer = (engineer) => {
-        return `
+	const createEngineer = engineer => {
+		return `
                 <div class="col s4">
                     <div class="card cyan lighten-3">
                         <div class="card content teal lighten-5 center-align">
@@ -51,10 +53,10 @@ const generateHtml = (employees) => {
                     </div>
                 </div>
             `;
-    };
+	};
 
-    const createIntern = (intern) => {
-        return `
+	const createIntern = intern => {
+		return `
                 <div class="col s4">
                     <div class="card cyan lighten-3">
                         <div class="card content teal lighten-5 center-align">
@@ -75,21 +77,33 @@ const generateHtml = (employees) => {
                     </div>
                 </div>
             `;
-    };
+	};
 
-    const team = [];
-    team.push(employees.filter(employee => employee.getRole() === 'Manager').map(manager => createManager(manager)).join(''));
-    team.push(employees.filter(employee => employee.getRole() === 'Engineer').map(engineer => createEngineer(engineer)).join(''));
-    team.push(employees.filter(employee => employee.getRole() === 'Intern').map(intern => createIntern(intern)).join(''));
+	const team = [];
+	team.push(
+		employees
+			.filter(employee => employee.getRole() === 'Manager')
+			.map(manager => createManager(manager))
+			.join('')
+	);
+	team.push(
+		employees
+			.filter(employee => employee.getRole() === 'Engineer')
+			.map(engineer => createEngineer(engineer))
+			.join('')
+	);
+	team.push(
+		employees
+			.filter(employee => employee.getRole() === 'Intern')
+			.map(intern => createIntern(intern))
+			.join('')
+	);
 
-    return team.join('');
+	return team.join('');
 };
 
-
-
-module.exports = (employeeHtml) => {
-
-    return `
+module.exports = employeeHtml => {
+	return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -114,4 +128,3 @@ module.exports = (employeeHtml) => {
     </html>
     `;
 };
-

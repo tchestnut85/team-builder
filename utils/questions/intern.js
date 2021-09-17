@@ -2,7 +2,7 @@ const internQuestions = [
 	{
 		type: 'input',
 		name: 'name',
-		message: 'What is the name of the employee? \n',
+		message: 'What is the name of the intern? \n',
 		validate: nameInput => {
 			if (nameInput) {
 				return true;
@@ -15,7 +15,7 @@ const internQuestions = [
 	{
 		type: 'number',
 		name: 'id',
-		message: "What is the employee's ID number? \n",
+		message: "What is the intern's ID number? \n",
 		validate: idInput => {
 			if (idInput) {
 				return true;
@@ -28,7 +28,7 @@ const internQuestions = [
 	{
 		type: 'input',
 		name: 'email',
-		message: "What is the employee's email address? \n",
+		message: "What is the intern's email address? \n",
 		validate: emailInput => {
 			if (emailInput.includes('@') && emailInput.includes('.com')) {
 				return true;
@@ -41,14 +41,12 @@ const internQuestions = [
 	{
 		type: 'input',
 		name: 'schoolName',
-		message: "\n What is the name of the Intern's school?",
+		message: "\n What is the name of the intern's school?",
 		validate: function (value) {
 			if (value) {
 				return true;
 			} else {
-				console.log(
-					"Please provide the name of this employee's school."
-				);
+				console.log("Please provide the name of the intern's school.");
 			}
 		},
 	},

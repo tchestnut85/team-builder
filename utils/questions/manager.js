@@ -15,7 +15,7 @@ const managerQuestions = [
 	{
 		type: 'number',
 		name: 'id',
-		message: "What is the employee's ID number? \n",
+		message: "What is the manager's ID number? \n",
 		validate: idInput => {
 			if (idInput) {
 				return true;
@@ -28,7 +28,7 @@ const managerQuestions = [
 	{
 		type: 'input',
 		name: 'email',
-		message: "What is the employee's email address? \n",
+		message: "What is the manager's email address? \n",
 		validate: emailInput => {
 			if (emailInput.includes('@') && emailInput.includes('.com')) {
 				return true;
@@ -41,7 +41,7 @@ const managerQuestions = [
 	{
 		type: 'input',
 		name: 'officeNumber',
-		message: "\n What is the Manager's office number?",
+		message: "\n What is the manager's office number?",
 		validate: function (value) {
 			let valid = !isNaN(parseFloat(value));
 			return valid || 'Please enter an office number.';
