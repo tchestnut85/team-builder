@@ -54,11 +54,14 @@ const managerQuestions = [
 		type: 'input',
 		name: 'officeNumber',
 		message: "\n What is the manager's office number?",
-		validate: function (value) {
-			let valid = !isNaN(parseFloat(value));
-			return valid || 'Please enter an office number.';
+		validate: officeNumber => {
+			if (officeNumber) {
+				return true;
+			} else {
+				console.log('You must enter a number.');
+				return false;
+			}
 		},
-		filter: Number,
 	},
 ];
 

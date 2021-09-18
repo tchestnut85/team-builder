@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const generateHtml = require('./utils/generateHtml');
+const createDocument = require('./utils/generateHtml');
 const {
 	addEmployeeQuestion,
 	managerQuestions,
@@ -13,6 +13,7 @@ const {
 
 // Array to hold all team members and feed into HTML generator
 const employees = [];
+const team = [];
 
 function startQuestions() {
 	addManager();
@@ -25,6 +26,7 @@ const addManager = async () => {
 	);
 	const manager = new Manager(name, id, email, officeNumber, teamName);
 	employees.push(manager);
+	team.push(teamName);
 	addEmployee();
 };
 
@@ -51,10 +53,11 @@ const addIntern = async () => {
 const makeProfile = () => {
 	fs.writeFile(
 		'./dist/index.html',
-		generateHtml(employees, employees.manager.teamName),
+		createDocument(employees, team[0]),
 		err => {
 			if (err) {
 				console.log('Error: ' + err);
+				throw Error(err);
 			} else {
 				console.log(
 					'\n =============== Team Profile created in: /dist/index.html! ==============='
