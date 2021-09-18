@@ -1,22 +1,27 @@
 * {
-    box-sizing: border-box;
-    font-weight: bolder;
+	box-sizing: border-box;
+	font-weight: bolder;
 }
 
 header {
-    background-color: #26c6da;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+	background-color: #26c6da;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+.cards-section {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .icons {
-    padding-right: 10px;
+	padding-right: 10px;
 }
 
 .padding-top {
-    padding-top: 10px;
+	padding-top: 10px;
 }
 
 .padding-bot {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
