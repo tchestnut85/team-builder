@@ -2,12 +2,12 @@
 	"name": "team-builder",
 	"version": "1.0.0",
 	"description": "Create a webpage with detailing your team's info.",
-	"main": "index.js",
+	"main": "app.js",
 	"directories": {
 		"lib": "lib"
 	},
 	"scripts": {
-		"start": "node index",
+		"start": "node app.js",
 		"test": "jest"
 	},
 	"repository": {
