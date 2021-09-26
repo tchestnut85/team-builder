@@ -4,24 +4,24 @@ const {
 	createInternCard,
 } = require('./creators');
 const mapEmployee = require('./mapEmployees');
-const EMPLOYEE_ROLES = require('./constants');
+const { EMPLOYEE_ROLES } = require('./constants');
 
 // generate the employee cards
 function generateHtml(employees) {
-	const roles = {
-		MANAGER: {
+	const roles = [
+		{
 			role: EMPLOYEE_ROLES.MANAGER,
 			creator: createManagerCard,
 		},
-		ENGINEER: {
+		{
 			role: EMPLOYEE_ROLES.ENGINEER,
 			creator: createEngineerCard,
 		},
-		INTERN: { role: EMPLOYEE_ROLES.INTERN, creator: createInternCard },
-	};
+		{ role: EMPLOYEE_ROLES.INTERN, creator: createInternCard },
+	];
 
 	// for each proprety/value in roles object, run the mapEmployee function with arguments
-	const teamCards = Object.values(roles)
+	const teamCards = roles
 		.map(role => mapEmployee(employees, role.role, role.creator))
 		.join('');
 
